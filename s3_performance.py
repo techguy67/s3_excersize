@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 
 import boto.s3.connection
 from boto.s3.key import Key
