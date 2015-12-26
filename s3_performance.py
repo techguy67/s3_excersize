@@ -7,7 +7,14 @@ import logging
 import time
 import sys
 import os
-from configparser import SafeConfigParser
+
+# cofigparser in python 2.x is camel case and changed for python3 to be pep 8 compliant
+# Using try and except will allow this app to run on either version
+
+try:
+    from configparser import SafeConfigParser
+except:
+    from ConfigParser import SafeConfigParser
 
 try:
     parser = SafeConfigParser()
